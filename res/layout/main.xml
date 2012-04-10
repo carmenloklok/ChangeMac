@@ -1,12 +1,143 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="vertical" >
+    android:layout_height="fill_parent" >
 
-    <TextView
+    <LinearLayout
+        android:id="@+main/ll_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dip"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Current MAC: "
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+main/tv_mac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            android:padding="10dip"
+            android:text="cant access"
+            android:textColor="@android:color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+main/ll_macs"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/hello" />
+        android:layout_below="@main/ll_mac"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="10dip" >
 
-</LinearLayout>
+        <EditText
+            android:id="@+main/et_mac0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+main/et_mac1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+main/et_mac2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+main/et_mac3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+main/et_mac4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="10sp" />
+
+        <EditText
+            android:id="@+main/et_mac5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:maxLength="2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+main/ll_btns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@main/ll_macs"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+main/btn_change"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change" />
+
+        <Button
+            android:id="@+main/btn_backup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Backup"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+main/btn_recover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Recover"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@main/ll_btns"
+        android:text="@string/state" />
+
+</RelativeLayout>
