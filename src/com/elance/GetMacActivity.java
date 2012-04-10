@@ -139,14 +139,12 @@ public class GetMacActivity extends Activity implements OnClickListener,
 		}
 	}
 
-	@Override
 	public boolean onLongClick(View v) {
 		if (v.getId() == R.main.tv_mac) {
 			AlertDialog.Builder builder = new Builder(this);
 			builder.setTitle("Copy");
 			builder.setPositiveButton("Copy",
 					new DialogInterface.OnClickListener() {
-						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
 							clipboard.setText(tv_mac.getText().toString());
@@ -154,7 +152,6 @@ public class GetMacActivity extends Activity implements OnClickListener,
 					});
 			builder.setNegativeButton("Cancel",
 					new DialogInterface.OnClickListener() {
-						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							dialog.dismiss();
 						}
@@ -164,7 +161,6 @@ public class GetMacActivity extends Activity implements OnClickListener,
 		return false;
 	}
 
-	@Override
 	public void onClick(View v) {
 		if (v.getId() == R.main.btn_change) {
 			AlertDialog.Builder builder = new Builder(this);
@@ -172,7 +168,6 @@ public class GetMacActivity extends Activity implements OnClickListener,
 			builder.setMessage(R.string.warning);
 			builder.setPositiveButton("OK,Go on",
 					new DialogInterface.OnClickListener() {
-						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							setMac();
 							dialog.dismiss();
@@ -184,7 +179,6 @@ public class GetMacActivity extends Activity implements OnClickListener,
 					});
 			builder.setNegativeButton("No,I ll backup first",
 					new DialogInterface.OnClickListener() {
-						@Override
 						public void onClick(DialogInterface dialog, int which) {
 							dialog.dismiss();
 						}
