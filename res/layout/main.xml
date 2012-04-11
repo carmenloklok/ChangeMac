@@ -26,7 +26,7 @@
             android:padding="10dip"
             android:text="cant access"
             android:textColor="@android:color/black"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -117,21 +117,21 @@
             android:id="@+main/btn_change"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:enabled="false"
             android:text="Change" />
 
         <Button
             android:id="@+main/btn_backup"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Backup"
-            android:visibility="gone" />
+            android:enabled="false"
+            android:text="Backup" />
 
         <Button
             android:id="@+main/btn_recover"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Recover"
-            android:visibility="gone" />
+            android:text="Recover" />
     </LinearLayout>
 
     <TextView
