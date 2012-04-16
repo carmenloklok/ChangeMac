@@ -29,20 +29,30 @@
             android:textSize="18sp" />
     </LinearLayout>
 
+    <TextView
+        android:id="@+main/tv_changeable"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@main/ll_mac"
+        android:layout_centerHorizontal="true"
+        android:text="20sp" />
+
     <LinearLayout
         android:id="@+main/ll_macs"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@main/ll_mac"
+        android:layout_below="@main/tv_changeable"
         android:gravity="center"
         android:orientation="horizontal"
         android:padding="10dip" >
 
         <EditText
             android:id="@+main/et_mac0"
-            android:layout_width="wrap_content"
+            android:layout_width="40dip"
             android:layout_height="wrap_content"
-            android:maxLength="2" />
+            android:gravity="center"
+            android:maxLength="2"
+            android:singleLine="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -52,9 +62,11 @@
 
         <EditText
             android:id="@+main/et_mac1"
-            android:layout_width="wrap_content"
+            android:layout_width="40dip"
             android:layout_height="wrap_content"
-            android:maxLength="2" />
+            android:gravity="center"
+            android:maxLength="2"
+            android:singleLine="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -64,9 +76,11 @@
 
         <EditText
             android:id="@+main/et_mac2"
-            android:layout_width="wrap_content"
+            android:layout_width="40dip"
             android:layout_height="wrap_content"
-            android:maxLength="2" />
+            android:gravity="center"
+            android:maxLength="2"
+            android:singleLine="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -76,9 +90,11 @@
 
         <EditText
             android:id="@+main/et_mac3"
-            android:layout_width="wrap_content"
+            android:layout_width="40dip"
             android:layout_height="wrap_content"
-            android:maxLength="2" />
+            android:gravity="center"
+            android:maxLength="2"
+            android:singleLine="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -88,9 +104,11 @@
 
         <EditText
             android:id="@+main/et_mac4"
-            android:layout_width="wrap_content"
+            android:layout_width="40dip"
             android:layout_height="wrap_content"
-            android:maxLength="2" />
+            android:gravity="center"
+            android:maxLength="2"
+            android:singleLine="true" />
 
         <TextView
             android:layout_width="wrap_content"
@@ -100,9 +118,11 @@
 
         <EditText
             android:id="@+main/et_mac5"
-            android:layout_width="wrap_content"
+            android:layout_width="40dip"
             android:layout_height="wrap_content"
-            android:maxLength="2" />
+            android:gravity="center"
+            android:maxLength="2"
+            android:singleLine="true" />
     </LinearLayout>
 
     <LinearLayout

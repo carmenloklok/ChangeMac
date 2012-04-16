@@ -6,6 +6,6 @@
     <string name="change">Please write down your MAC address,or make a backup.\nThis CHANGE is PERMANENT!</string>
     <string name="backup">Are you sure backup?</string>
     <string name="recover">Are you sure recover?</string>
-    <string name="state">This app is for changing your MAC address,but please write down or backup your MAC address first, Long press the MAC address your can make a copy!</string>
+    <string name="state">This app is for changing your MAC address,but please write down or backup your MAC address first, Long press the MAC address you can make a copy!</string>
 
 </resources>

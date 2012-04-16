@@ -7,6 +7,7 @@ import android.app.AlertDialog;
 import android.app.AlertDialog.Builder;
 import android.content.Context;
 import android.content.DialogInterface;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.text.ClipboardManager;
 import android.view.View;
@@ -21,7 +22,7 @@ public class GetMacActivity extends Activity implements OnClickListener,
 		OnLongClickListener {
 	private static final String TAG = "com.elance.GetMacActivity";
 
-	private TextView tv_mac;
+	private TextView tv_mac, tv_changeable;
 	private EditText et_mac0, et_mac1, et_mac2, et_mac3, et_mac4, et_mac5;
 	private Button btn_change, btn_backup, btn_recover;
 
@@ -35,6 +36,7 @@ public class GetMacActivity extends Activity implements OnClickListener,
 	private void init() {
 		setContentView(R.layout.main);
 		tv_mac = (TextView) findViewById(R.main.tv_mac);
+		tv_changeable = (TextView) findViewById(R.main.tv_changeable);
 		et_mac0 = (EditText) findViewById(R.main.et_mac0);
 		et_mac1 = (EditText) findViewById(R.main.et_mac1);
 		et_mac2 = (EditText) findViewById(R.main.et_mac2);
@@ -54,8 +56,13 @@ public class GetMacActivity extends Activity implements OnClickListener,
 			tv_mac.setText(mac);
 		}
 		if (Util.changeable) {
+			tv_changeable.setText("CHANGEABLE");
+			tv_changeable.setTextColor(Color.GREEN);
 			btn_change.setEnabled(true);
 			btn_backup.setEnabled(true);
+		} else {
+			tv_changeable.setText("UNCHANGEABLE");
+			tv_changeable.setTextColor(Color.RED);
 		}
 	}
 
